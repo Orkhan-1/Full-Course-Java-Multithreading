@@ -1,7 +1,5 @@
 package src.tutorial_3;
 
-import src.MyCallable;
-
 import java.util.concurrent.*;
 
 public class ThreadCreationDemo {
