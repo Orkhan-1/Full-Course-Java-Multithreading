@@ -1,3 +1,5 @@
+package src.tutorial_3;
+
 class MyRunnable implements Runnable {
 
     @Override

@@ -1,3 +1,5 @@
+package src.tutorial_3;
+
 class MyThread extends Thread {
 
     @Override

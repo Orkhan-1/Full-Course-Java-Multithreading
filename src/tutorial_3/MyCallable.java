@@ -1,3 +1,5 @@
+package src.tutorial_3;
+
 import java.util.concurrent.Callable;
 
 class MyCallable implements Callable<String> {
