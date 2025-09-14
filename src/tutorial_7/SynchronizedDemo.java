@@ -1,3 +1,5 @@
+package src.tutorial_7;
+
 public class SynchronizedDemo {
     private static int counter = 0;
 
@@ -8,7 +10,7 @@ public class SynchronizedDemo {
 
     public static void main(String[] args) throws InterruptedException {
         Runnable task = () -> {
-            for (int i = 0; i < 1000; i++) {
+            for (int i = 0; i < 10000; i++) {
                 increment();
             }
         };
