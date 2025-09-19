@@ -6,7 +6,7 @@ public class RaceConditionDemo {
     public static void main(String[] args) throws InterruptedException {
         Runnable task = () -> {
             for (int i = 0; i < 10000; i++) {
-                counter++; // not thread-safe!
+                counter++;
             }
         };
 
@@ -34,9 +34,9 @@ public class RaceConditionDemo {
 
 
 // Three Steps:
-// 1. Load the value of counter from memory into a CPU register.
-// 2. Increment the value in the CPU register.
-// 3. Store the incremented value back from the CPU register to memory.
+// 1. Load the value of counter from memory into a CPU register
+// 2. Increment the value in the CPU register
+// 3. Store the incremented value back from the CPU register to memory
 
 // ======================================================
 //          Hardware Visualization
@@ -63,4 +63,4 @@ public class RaceConditionDemo {
 // Steps for incrementing a shared counter:
 //  1. Load from RAM into CPU register (via cache)
 //  2. Increment register
-//  3. Write back to RAM (flush cache)
+//  3. Write back to RAM (flush cache)  0 -> t1 = 1 => t2 = 2

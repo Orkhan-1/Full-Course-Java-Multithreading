@@ -7,7 +7,8 @@ public class ExecutorDemo {
         for (int i = 1; i <= 5; i++) {
             int taskId = i;
             executor.submit(() -> {
-                System.out.println("Task " + taskId + " executed by " + Thread.currentThread().getName());
+                System.out.println("Task " + taskId + " executed by " +
+                        Thread.currentThread().getName());
             });
         }
 
