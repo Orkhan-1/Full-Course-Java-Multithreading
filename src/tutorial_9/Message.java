@@ -1,3 +1,5 @@
+package src.tutorial_9;
+
 public class Message {
     private String content;
     private boolean empty = true; // Flag to indicate if message is available
