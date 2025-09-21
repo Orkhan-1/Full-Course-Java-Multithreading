@@ -1,3 +1,5 @@
+package src.tutorial_10;
+
 public class VolatileDemo {
     private static volatile boolean running = true;
 
