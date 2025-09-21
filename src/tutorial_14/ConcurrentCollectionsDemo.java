@@ -1,3 +1,5 @@
+package src.tutorial_14;
+
 import java.util.concurrent.*;
 import java.util.*;
 
@@ -23,4 +25,14 @@ public class ConcurrentCollectionsDemo {
         System.out.println("List: " + list);
     }
 }
-// Output will show the contents of the ConcurrentHashMap and CopyOnWriteArrayList after concurrent writes.
+/*
+Concurrent Collections in Java
+
+Map: ConcurrentHashMap, ConcurrentSkipListMap
+Set: ConcurrentSkipListSet, CopyOnWriteArraySet, ConcurrentHashMap.newKeySet()
+Queue: ConcurrentLinkedQueue, ConcurrentLinkedDeque, LinkedBlockingQueue,
+       LinkedBlockingDeque, ArrayBlockingQueue, PriorityBlockingQueue,
+       DelayQueue, SynchronousQueue, LinkedTransferQueue
+List: CopyOnWriteArrayList
+
+ */
