@@ -32,3 +32,28 @@ public class CASExample {
         }
     }
 }
+
+/*
+
+                      Thread t1:
+Reads oldValue = 0
+newValue = 1
+Calls compareAndSet(0, 1) → succeeds, updates value to 1, returns true
+
+                      Thread t2 (running at the same time):
+Also read oldValue = 0
+newValue = 1
+Calls compareAndSet(0, 1) → fails, because value is now 1, returns false
+
+
+
+
+
+
+
+Most CPUs (x86, ARM, etc.) have special instructions like:
+CMPXCHG (x86) → Compare and Exchange
+LDREX/STREX (ARM)
+
+* */
+
