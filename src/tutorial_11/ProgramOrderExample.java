@@ -11,6 +11,29 @@ public class ProgramOrderExample {
 
 /*
 
+// ======================================================
+//          Hardware Visualization of Caches
+// ======================================================
+//
+//                                 |   RAM   |
+//                                | running=true |
+//
+//               CPU Core 1 (Thread t)             CPU Core 2 (main thread)
+//              +-----------+                    +-----------+
+//              | Registers |                    | Registers |
+//              | running=1 |   <--- cached      | running=1 |
+//              +-----------+                    +-----------+
+//              |   L1      |                    |   L1      |
+//              | running=1 |   <--- cached      | running=1 |
+//              +-----------+                    +-----------+
+//              |   L2      |                    |   L2      |
+//              | running=1 |                    | running=1 |
+//              +-----------+                    +-----------+
+//              | L3 (shared)                    | L3 (shared)
+//              | running=1 |                    | running=1 |
+//              +-----------+                    +-----------+
+
+
 The Java Memory Model (JMM) defines "happens-before" relationships to ensure visibility
 and ordering of operations across threads.
 
