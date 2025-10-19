@@ -19,4 +19,3 @@ public class CyclicBarrierDemo {
         }
     }
 }
-// Output will show that all threads reach the barrier and then continue after the barrier action is executed.

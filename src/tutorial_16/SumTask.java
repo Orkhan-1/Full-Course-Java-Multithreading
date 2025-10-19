@@ -1,3 +1,5 @@
+package src.tutorial_16;
+
 import java.util.concurrent.*;
 
 class SumTask extends RecursiveTask<Integer> {

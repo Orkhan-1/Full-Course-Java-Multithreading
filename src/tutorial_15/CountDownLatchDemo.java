@@ -4,6 +4,8 @@ import java.util.concurrent.*;
 
 public class CountDownLatchDemo {
     public static void main(String[] args) throws InterruptedException {
+        // Make one or more threads wait until
+        // a set of operations being performed by other threads completes
         CountDownLatch latch = new CountDownLatch(3);
 
         for (int i = 1; i <= 3; i++) {

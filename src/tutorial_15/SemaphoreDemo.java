@@ -10,7 +10,7 @@ public class SemaphoreDemo {
             try {
                 semaphore.acquire();
                 System.out.println(Thread.currentThread().getName() + " acquired permit");
-                Thread.sleep(1000);
+                Thread.sleep(2000);
                 semaphore.release();
             } catch (InterruptedException e) {}
         };
