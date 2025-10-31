@@ -26,4 +26,3 @@ public class DeadlockDemo {
         }).start();
     }
 }
-// This code demonstrates a deadlock situation where two threads are waiting for each other to release locks.
