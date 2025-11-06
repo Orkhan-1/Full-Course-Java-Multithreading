@@ -33,3 +33,13 @@ public class StructuredConcurrencyDemo {
         return "john@example.com";
     }
 }
+
+/*
+
+Parent Scope (StructuredTaskScope)
+    ├─> Task 1 (VT)
+    ├─> Task 2 (VT)
+    └─> Task 3 (VT)
+Parent waits until all tasks finish or any task fails
+
+ */
